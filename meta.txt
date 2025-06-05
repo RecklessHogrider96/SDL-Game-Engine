@@ -1,0 +1,116 @@
+-- Who worked on this lab? Include names and GitHub usernames.
+- Roshan - recklessHogrider96
+- Marcin Kierzenka - mkierzenka
+- Zachary Katancik - zkatancik
+- Matin Raayai Ardakani - matinraayai
+- Alexander Chen - adotnotlex
+
+
+-- Did you implement any extensions? If so, which ones, who implemented each, and how can they be tried out?
+Matin - Implemented an Anti-tank mine inspired by SovietWomble. The mine can be placed on the roads and cannot be sold,
+and upon explosion, kills an enemy.
+Roshan - Built support for environment items in a level and can use Level editor for adding/deleting Environment items.
+Environment item are not realted to the grid and can be placed freely within the level. My previous extension according to
+the moscow was to have upgradable tower, but that was wayy too complicated to have in our game along with animated towers.
+I have mentioned this change in extension/moSCow to Professor Cooper as well as we had modify the moSCow to reach our goals,
+based on the playability of the game, and it was approved. The second reason behind going against tower upgrades was that
+the levels were already easy to finish and the enemy waves would become easier to overcome if we upgrade towers. 
+So I worked on level balancing as well. 
+Marcin - I added health bars to the enemies, you can see them pop up and change as the enemies get hit with projectiles.
+Zack - I added the ability for users to change the targeting preferences of towers on the board. If you click a tower on the 
+map, it will bring up some information about the tower, and display buttons for the user to change the targets the tower fires at.
+These can be the furthest along tower, the furthest behind tower, the closest tower, and the tower with the most starting HP.
+
+
+-- Did you use any external resources? If so, cite them below.
+-Resource Manager (Project 1)
+-Game Manager (Project 1)
+-res_path (Project 1)
+-MakeFile (Project 1)
+-math library: TinyMath.hpp (Lab2)
+-cxxTest-4.4 (various)
+-Collisions and Gameobjects (Lab6)
+
+-- Did you use any code or resources from previous assignments? If so, list below.
+Merged the breakout and graverunner projects into the current repo.
+https://unityassetcollection.com/tower-defense-2d-free-download/ 
+https://craftpix.net/product/tower-defense-2d-game-kit/ for the Tower Defense Assets
+
+
+-- Did you collaborate with any other students/TAs/Professors? If so, list below.
+No
+
+
+-- Describe your approach to implementing the lab.
+Matin -
+(Milestone 1)
+Completely revamped how we organized levels and UI, making everything use the GameObject and Level architecture
+and allow for reusable components across both games. This change allowed us to easily and modularly add buttons, UI elements,
+and gameObjects in both the games and the editor. After the breakout game worked with the new design, others helped transfering
+it into other deliverables of the project. I then helped each team member with bug fixes.
+(Milestone 2)
+Made delayed spawn component + other indicators used in the game logic. Made a separate enemy level file in sparse format.
+Helped with bug fixes of other group members.
+(Milestone 3)
+Added Anti-tank mine. Helped with bug fixes of other group members. Ensured playability of previous components.
+Added level editor support for the enemy waves for each file.
+
+Marcin -
+(Milestone 1)
+Mostly worked on porting over the GraveRunner functionality into the new infrastructure after Matin did the initial setup.
+This included both the game itself and its level editor.
+(Milestone 2)
+Led the push to add the Rock Throwing Tower and support classes (E.g. Rock, RockThrower Component, etc.) including parsing level
+files, creating the new objects, defining the interactions between Rocks and Enemies. Also did some touchups to
+TdLevel/TdLogic-related code for handling the necessary new functionality (e.g. tracking score, lives, reducing enemy health, etc.).
+Ported over and fixed unit tests for previous games. Added unit tests for the Tower Defense game code. Added documentation
+throughout Tower Defense codebase.
+(Milestone 3)
+Added the health bars to enemies, put some time into investigating how to support tower upgrading. Then put some time into
+making the submenu for towers and working with Zach to change their targeting preferences.
+Also the usual small cleanups/touchups here and there.
+
+Zack - 
+(Milestone 1) Rewrote all UI components to be game objects, including buttons, menus, etc. Worked extensively
+on game editors front-end to match rest of the component based architecture. 
+(Milestone 2) Did initial custom game setup getting a working game going from scratch, 
+reconfigured the menus to new game, added UI elements to the in-game experience, and worked on grid components for object placement like mouse over of 
+items when clicked.
+(Milestone 3) Added all new tower types with varying mechanics. Animated all towers and created sprites. Added 
+ability for users to change the targeting of towers.
+
+Roshan - 
+(Milestone 1): 
+Rewrote level file design, generation and updation via level editor. Added Instructions menus. 
+Dynamic selection of block textures from the resources. Wrote backend for the level editor.
+(Milestone 2):
+Added Enemy Path file so that we can have pre defined paths as well.
+Added Enemy tower path to have layers levels.
+Built full Level editor.
+Built 4 levels. Wrote Enemy spawner and enemy spawner file with config data on what to spawn.
+Updated instructions.
+(Milestone 3):
+Built Level editor for Environment.
+The level editor would be able to edit 3 files at the same time, 
+where all the information related to the layering in the level would be present.
+
+Alex - 
+(Milestone 2):
+Updated UI placement and spacing. 
+Added asset for coin icon to be displayed. 
+(Milestone 3):
+Applied coin and health icons to UI. 
+
+-- How many hours did it take you to complete this lab?
+Roshan - (M1) 40, (M2) 80, (M3) 80
+Zack - (M1) 40, (M2) 20, (M3) 30
+Matin - (M1) 60, (M2) 20, (M3) 20
+Marcin - (M1) 20, (M2) 20, (M3) 20
+Alex - (M2) 2, (M3), 5
+
+
+-- (Optional) What was your favorite part of the lab?
+Roshan - The level editor can edit everything!!! Except enemy waves but everything other that that!
+
+
+-- (Optional) How would you improve the lab?
