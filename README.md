@@ -1,4 +1,17 @@
-# SDL Tower Defense Game
+# Games made on my Engine
+
+### Tower Defense
+![image](https://github.com/user-attachments/assets/fe61a130-5561-4482-a10a-1425b8c03c32)
+
+### Platformer
+![image](https://github.com/user-attachments/assets/4cd8ebd0-7f22-442f-8390-d2ec0590b5e3)
+
+### Breakout
+![image](https://github.com/user-attachments/assets/803486d3-dd40-409c-a6bb-1a402ff02545)
+
+---
+
+## SDL Tower Defense Game
 
 ## Engine Summary
 This project is built on a custom C++ game engine powered by SDL2. The engine provides:
@@ -11,19 +24,6 @@ This project is built on a custom C++ game engine powered by SDL2. The engine pr
 - **Clean Modularity**: Public headers in `include/`, implementations in `src/`, and third-party dependencies under `extern/`.
 
 These core systems let you focus on game logic—like tower defense mechanics—without rewriting boilerplate each time.
-
----
-
-## Games made on this Engine
-
-### Tower Defense
-![image](https://github.com/user-attachments/assets/fe61a130-5561-4482-a10a-1425b8c03c32)
-
-### Platformer
-![image](https://github.com/user-attachments/assets/4cd8ebd0-7f22-442f-8390-d2ec0590b5e3)
-
-### Breakout
-![image](https://github.com/user-attachments/assets/803486d3-dd40-409c-a6bb-1a402ff02545)
 
 ---
 
